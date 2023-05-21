@@ -4,7 +4,7 @@ from flask import render_template,redirect,request,session,flash
 from flask_app.models.user_model import User
 from flask_app.models.message_model import Message
 from flask import request   
- 
+
 
 
 @app.route('/create/message/<int:id>', methods=['POST'])

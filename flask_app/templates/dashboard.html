@@ -46,6 +46,9 @@
                         <span class="d-block">{{user.last_name}}:</span>
                     </label>
                     <textarea name="message" id="message" cols="30" rows="2" class="col-8"></textarea>
+                    {% for message in get_flashed_messages(category_filter=['message']) %}
+                    <p class="text-warning">{{message}}</p>
+                    {% endfor %}
                     <button class="btn btn-info align-self-end" type="submit" class="col-2">Send</button>
                 </form>
                 {% endfor %}

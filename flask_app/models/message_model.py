@@ -91,10 +91,10 @@ class Message:
         # -----------------------------------------First Name
         if len(data['message']) < 1 :
             is_valid = False
-            flash('Invalid First Name!', 'message')
-        elif len(data['message']) < 2 :
+            flash('Invalid Message!', 'message')
+        elif len(data['message']) < 5 :
             is_valid = False
-            flash('Invalid First Name! * must be 2 characters long', 'message')
+            flash('Invalid Message! * must be 5 characters long', 'message')
 
 
 def pretty_date(time=False):
